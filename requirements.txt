@@ -1,0 +1,9 @@
+mysql-connector-python
+python-dotenv
+sqlalchemy
+smartapi-python
+yfinance
+logzero
+websocket
+pyotp
+
