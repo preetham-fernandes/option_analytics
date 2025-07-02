@@ -2,13 +2,15 @@
 
 from SmartApi.smartConnect import SmartConnect
 import pyotp
+from dotenv import load_dotenv
 import os
 
-# Ideally move these to a .env file and load via dotenv
-API_KEY = "X2TDF2WQ"
-CLIENT_ID = "N225708"
-PASSWORD = "2310"
-TOTP_SECRET = "AGGVTSMP2IXHCOIXXZ2XF6TAFM"
+load_dotenv()
+
+API_KEY = os.getenv("API_KEY")
+CLIENT_ID = os.getenv("CLIENT_ID")
+PASSWORD = os.getenv("PASSWORD")
+TOTP_SECRET = os.getenv("TOTP_SECRET")
 
 def smartapi_login():
     obj = SmartConnect(api_key=API_KEY)
