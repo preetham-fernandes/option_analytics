@@ -1,0 +1,61 @@
+# Python cache
+__pycache__/
+*.py[cod]
+*$py.class
+
+# VS Code settings
+.vscode/
+
+# Environment files
+.env
+*.env
+
+# MacOS
+.DS_Store
+
+# Windows
+Thumbs.db
+
+# Logs and temporary files
+*.log
+*.tmp
+*.bak
+
+# Jupyter/IPython (if used)
+.ipynb_checkpoints/
+
+# Pipenv and venv
+Pipfile.lock
+poetry.lock
+.venv/
+venv/
+env/
+
+# pyproject build artifacts
+dist/
+build/
+*.egg-info/
+
+# Compiled Cython files
+*.c
+*.cpp
+*.so
+
+# Your project-specific folders
+backend/assets/*.pkl
+backend/assets/*.json
+cron_jobs/__pycache__/
+backend/__pycache__/
+frontend/__pycache__/
+
+# MySQL dumps or sensitive DB exports
+*.sql
+
+# Ignore token or credential files
+tokens/
+credentials/
+*.secret
+*.key
+
+# Ignore the full SQLite db if ever used
+*.db
